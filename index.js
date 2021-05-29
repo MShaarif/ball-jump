@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let leftTimerId
   let rightTimerId
 
+  document.getElementById("moveLeft").onclick = function() {moveLeft()};
+  document.getElementById("moveRight").onclick = function() {moveRight()};
   class Platform {
     constructor(newPlatBottom) {
       this.left = Math.random() * 315
@@ -139,7 +141,6 @@ function fall() {
     }
     isGoingRight = true
     rightTimerId = setInterval(function () {
-      //changed to 313 to fit doodle image
       if (doodlerLeftSpace <= 313) {
         console.log('going right')
         doodlerLeftSpace +=5
@@ -155,7 +156,6 @@ function fall() {
     clearInterval(rightTimerId)
   }
 
-  //assign functions to keyCodes
   function control(e) {
     doodler.style.bottom = doodlerBottomSpace + 'px'
     if(e.key === 'ArrowLeft') {

@@ -20,3 +20,50 @@
   background-image: url('platform.png');
   position: absolute;
 }
+
+h3{
+  color: red;
+}
+
+.button {
+  height: 30px;
+  width: 370px;
+  border-radius: 30px;
+  background-color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 5px; 
+}
+
+.button:hover {
+  background-color: rgb(39, 34, 34);
+}
+
+.button:active {
+  background-color: #A9A9A9;
+  color: #808080;
+}
+
+#moveLeft {
+  width: 190px;
+  border-radius: 30px;
+  margin: 5px;
+  color: blue ;
+  background-color: pink;
+  border-color: red; 
+  font-size: 60px;
+}
+
+#moveRight {
+  width: 190px;
+  border-radius: 30px;
+  border-color: red;
+  margin: 5px;
+  color: blue ;
+  background-color: pink;
+  font-size: 60px;
+}
